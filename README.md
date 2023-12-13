@@ -3,7 +3,8 @@
 ## Project setup
 ```
 Create .env file
-add this line to it -> VUE_APP_SERVER_URL='http://127.0.0.1:8000'
+edit line to it -> VUE_APP_SERVER_URL='http://127.0.0.1:8000'
+add google API key -> VUE_APP_GOOGLE_API_KEY=place key here
 
 edit the URL to point to your SERVER URL
 ```
