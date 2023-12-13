@@ -6,7 +6,7 @@
           
         <strong>TOFALI MATERIALS ESTIMATOR</strong>-->
           <img
-            src="https://res.cloudinary.com/celestialmk/image/upload/v1656789200/owpuw98v7us7vnd6fvok.png"
+            src="./assets/tofali_word_logo.png"
             alt=""
           />
         </router-link>
@@ -33,47 +33,12 @@
 
         <div class="navbar-end has-text-left">
           <router-link to="/" class="navbar-item">Home</router-link>
-          <router-link
-            to="/materials-calculator"
-            class="navbar-item"
-            @click="clearCart()"
-            >Materials Calculator</router-link
-          >
-          <router-link to="/carbon-footprint-calculator" class="navbar-item"
+          <router-link to="/" class="navbar-item"
             >Carbon Footprint</router-link
           >
-          <router-link to="/documents" class="navbar-item"
-            >Documents</router-link
-          >
-
           <router-link to="/about" class="navbar-item">About</router-link>
 
-          <div class="navbar-item" v-if="$store.state.isAuthenticated">
-            <h5 class="">Logged in as {{ $store.state.username }}</h5>
-          </div>
-          <div class="navbar-item" v-if="$store.state.isAuthenticated">
-            <button
-              @click="logout()"
-              class="button is-success"
-              style="background-color: #004100"
-            >
-              Log out
-            </button>
-          </div>
-          <div class="navbar-item" v-else>
-            <router-link
-              to="/sign-up"
-              class="button is-success mr-2"
-              style="background-color: #004100"
-              >Sign Up</router-link
-            >
-            <router-link
-              to="/log-in"
-              class="button is-success"
-              style="background-color: #004100"
-              >Log In</router-link
-            >
-          </div>
+         
         </div>
       </div>
     </nav>
@@ -83,92 +48,21 @@
       <div class="widgetized-footer has-text-left">
         <div class="container">
           <div class="row">
-            <div class="column is-4">
-              <div class="footer-widget">
-                <img
-                  src="https://res.cloudinary.com/celestialmk/image/upload/v1656789200/owpuw98v7us7vnd6fvok.png"
-                  class="mb-1"
-                  alt=""
-                />
-                <p class="has-text-white">
-                  Eco Concrete Ltd runs a business model of producing cement
-                  based materials (blocks, planters, pipes and pavers etc.) on
-                  construction sites. By deploying our industrial scale machines
-                  on construction sites, including the remotest places in
-                  Uganda, we reduce the cost of the materials we provide by
-                  about 30% and construction costs by up to 20%.
-                </p>
-              </div>
-            </div>
-            <div class="column is-4">
-              <div class="footer-widget">
-                <div class="">
-                  <h3 class="widget-title">Get In Touch</h3>
-                </div>
-                <ul class="menu-links has-text-white">
-                  <li class="">
-                    ECO CONCRETE LIMITED
-                    <br />
-                    Plot. No. 39b, Naguru drive;
-                  </li>
-                  <li>P.O. Box 37, Ntinda - Kampala</li>
-                  <li>+256 393240090</li>
-                  <li>
-                    Email:
-                    <a href="admin@ecoconcrete.co.ug"
-                      >tofali@ecoconcrete.co.ug</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="column is-4">
-              <div class="footer-widget">
-                <div class="">
-                  <h3 class="widget-title">Important Links</h3>
-                </div>
-                <ul class="mb-2">
-                  <li>
-                    <router-link to="/about">
-                      <a class="has-green-text">About Us</a>
-                    </router-link>
-                  </li>
-                  <li>
-                    <a href="https://ecoconcrete.co.ug/">Company Profile</a>
-                  </li>
-                  <li>
-                    <router-link to="/">
-                      <a class="">Home</a>
-                    </router-link>
-                  </li>
-                  <div class="columns is-12 is-mobile">
-                    <div class="is-4" >
+                
+                  <div class="columns">
+                    <div class="column is-offset-5 is-6" >
                       <span class="icon ml-3 mt-3"><a href="https://twitter.com/TofaliAfrica"><i class="fab fa-twitter fa-lg" aria-hidden="true" style="color:#41c373"></i></a></span>
+                      <span class="icon ml-3 mt-3"><a href="https://www.facebook.com/profile.php?id=100093655031029"><i class="fab fa-facebook fa-lg" aria-hidden="true" style="color:#41c373"></i></a></span>
+                      <span class="icon ml-3 mt-3"><a href="https://instagram.com/tofali_africa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram fa-lg" aria-hidden="true" style="color:#41c373"></i></a></span>
                       
                     </div>
-                    <div class="is-4">
-                      <span class="icon ml-3 mt-3"><a href="https://www.facebook.com/profile.php?id=100093655031029"><i class="fab fa-facebook fa-lg" aria-hidden="true" style="color:#41c373"></i></a></span>
-                    </div>
-                    <div class="is-4">
-                      <span class="icon ml-3 mt-3"><a href="https://instagram.com/tofali_africa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram fa-lg" aria-hidden="true" style="color:#41c373"></i></a></span>
-                    </div>
                   </div>
-                  <!--
-                  <li>
-                      <router-link to="/portfolio">
-                        <a class="">Portfolio</a>
-                      </router-link>
-                    </li>
-                    <li>
-                      <a href='https://play.google.com/store/apps/details?id=com.tofaliafrica.client.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                      <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
-                    </li>
-                  -->
-                  <li>TofaliAfrica December 12 Version</li>
-                </ul>
+                
               </div>
-            </div>
-          </div>
+              <div class="has-text-centered p-4">
+                <p>Tofali Carbon-Footprint December 12 Version</p> 
+
+              </div>
         </div>
       </div>
       <div
@@ -189,9 +83,11 @@
                 <li><a href="">Privacy Policy</a></li>
               -->
           </ul>
-          <p class="has-text-center has-text-white">
-            &copy; 2023 Tofali Africa. A platform for Eco Concrete Ltd Clients.
-          </p>
+          <div class="p-4 has-text-centered">
+            <p class=" has-text-white">
+              &copy; 2023  <a class="has-text-primary" href="https://tofaliafrica.com">Tofali Africa.</a> A platform for Eco Concrete Ltd Clients.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
@@ -205,13 +101,13 @@ export default{
   data() {
     return {
       showMobileMenu: false,
-      cart: {
-        items: [],
-      },
+      
     };
   },
   beforeCreate() {
     this.$store.commit("initializeStore");
+
+
 
   },
 }
@@ -222,7 +118,7 @@ export default{
 @import "../node_modules/bulma";
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -230,15 +126,15 @@ export default{
 }
 
 nav {
-  padding: 30px;
-
   a {
-    font-weight: bold;
-    color: #2c3e50;
-
     &.router-link-exact-active {
-      color: #42b983;
+      color: rgb(0, 65, 0);
     }
   }
+}
+
+.navbar-brand {
+  min-height: 3.25rem;
+  display: flex;
 }
 </style>

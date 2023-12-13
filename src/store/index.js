@@ -2,6 +2,19 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    carbon_cart:{
+      emit_mats:[], //emitter materials list
+      emit_mans:[], //emitter materials manufacture list
+      emit_stage:[],
+      //emit_elec:[],
+    },
+    carbon_ca: {
+      emit_area:[]
+    },
+
+    carbon_cart_electricity:0,
+    carbon_cart_distance:0,
+    carbon_manufacture_total:0,
 
      //New Carbon Footprint
     carbon_cement: '',
@@ -60,11 +73,8 @@ export default createStore({
   },
   mutations: {
     initializeStore(state){
-      if (localStorage.getItem('carbon_cart')){
-        state.carbon_cart = JSON.parse(localStorage.getItem('carbon_cart'))
-      } else {
-        localStorage.setItem('carbon_cart', JSON.stringify(state.carbon_cart))
-      }
+
+      
     },
 
     //Carbon Footprint
